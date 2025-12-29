@@ -14,7 +14,9 @@ dukkan_bilgisi = {
     """,
     'adres': 'Kale Mah. Can Sok. 7/A, Samanpazarı, Altındağ/Ankara',
     'telefon': '+90 312 324 26 68',
-    'facebook': 'https://www.facebook.com/kadizade.ticaret/?locale=tr_TR'
+    'facebook': 'https://www.facebook.com/kadizade.ticaret/?locale=tr_TR',
+    # YENİ EKLENEN INSTAGRAM SATIRI:
+    'instagram': 'https://www.instagram.com/sepetimde_'
 }
 
 # --- ÜRÜN LİSTESİ ---
@@ -22,7 +24,8 @@ urunler = [
     {"ad": "Ekmek Sepetleri", "resim": "sepet1.jpg"},
     {"ad": "Çamaşır Sepetleri", "resim": "sepet2.jpg"},
     {"ad": "Piknik ve Gezi", "resim": "sepet3.jpg"},
-    {"ad": "Dekoratif Modeller", "resim": "sepet4.jpg"}
+    {"ad": "Dekoratif Modeller", "resim": "sepet4.jpg"},
+    {"ad": "Teşhir Ürünleri", "resim": "sepet5.jpg"}
 ]
 
 # --- BLOG YAZILARI ---
@@ -33,7 +36,6 @@ blog_yazilari = [
         "tarih": "28 Aralık 2025",
         "resim": "blog1.jpg",
         "ozet": "Bir sepetin örülmesi sadece dalların birleşmesi değil, sabrın, emeğin ve yüzyıllık bir geleneğin ilmek ilmek işlenmesidir.",
-        # YENİ DETAYLI BLOG YAZISI BURADA
         "icerik": """
             <p>Sepetçilik, sadece bir eşya üretme işi değil, doğayla insan arasındaki en eski anlaşmalardan biridir. Toprağın bize sunduğu söğüt, kargı ve fındık dalları, ustanın elinde şekil bularak evinize girmeye hazırlanır. Kadızade Ticaret olarak, Samanpazarı'nın tarihi dokusunda bu kadim yolculuğa şahitlik ediyoruz.</p>
 
