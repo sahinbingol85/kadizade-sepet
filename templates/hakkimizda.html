@@ -7,74 +7,89 @@
     <meta name="description" content="Kadızade Ticaret'in yarım asırlık sepetçilik hikayesi. Ankara Samanpazarı'nda babadan oğula geçen gelenek.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --ana-renk: #5D4037;
+            --ana-renk: #4E342E;
             --vurgu-renk: #8D6E63;
-            --arkaplan: #FDFBF7;
+            --arkaplan: #FAF9F6;
             --yesil: #558B2F;
+            --altin: #C5A059;
         }
 
         body {
             background-color: var(--arkaplan);
-            font-family: 'Lora', serif;
-            color: #4e342e;
-            padding-top: 80px;
-        }
-
-        .navbar { background-color: var(--ana-renk) !important; }
-        .nav-link { color: #d7ccc8 !important; }
-        .nav-link:hover, .nav-link.active { color: white !important; }
-        .navbar-brand { color: #fff !important; }
-
-        .page-title {
+            font-family: 'Inter', sans-serif;
             color: var(--ana-renk);
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-
-        .text-content {
-            font-size: 1.1rem;
+            padding-top: 76px;
             line-height: 1.8;
         }
 
+        h1, h2, h3, h4, h5, .navbar-brand { font-family: 'Playfair Display', serif; }
+
+        /* NAVBAR (Yeni Tasarım) */
+        .navbar { background-color: #fff !important; box-shadow: 0 2px 15px rgba(0,0,0,0.05); padding: 15px 0; }
+        .navbar-brand { color: var(--ana-renk) !important; font-weight: 700; font-size: 1.5rem; }
+        .nav-link { color: #666 !important; font-weight: 500; margin-left: 15px; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--yesil) !important; }
+
+        /* İÇERİK STİLLERİ */
+        .page-title { color: var(--ana-renk); font-weight: bold; margin-bottom: 30px; font-size: 2.5rem; }
+        .text-content { font-size: 1.1rem; color: #5d4037; }
+
         .img-cerceve {
-            border: 10px solid white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 8px solid white;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
             transform: rotate(2deg);
             transition: transform 0.3s;
+            border-radius: 4px;
         }
-        .img-cerceve:hover {
-            transform: rotate(0deg);
-        }
+        .img-cerceve:hover { transform: rotate(0deg); }
 
-        .footer {
-            background-color: var(--ana-renk);
-            color: #d7ccc8;
-            padding: 40px 0;
-            margin-top: 80px;
+        .contact-box { background: white; border-radius: 12px; border-left: 5px solid var(--yesil); }
+
+        /* WHATSAPP BUTONU */
+        .whatsapp-float {
+            position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px;
+            background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 100; display: flex; align-items: center; justify-content: center;
+            text-decoration: none; transition: 0.3s;
         }
+        .whatsapp-float:hover { background-color: #128C7E; color: white; transform: scale(1.1); }
+
+        /* FOOTER */
+        .footer { background-color: #2D2420; color: #d7ccc8; padding: 70px 0 30px 0; margin-top: 100px; }
+        .footer h5 { color: white; margin-bottom: 25px; font-weight: bold; }
+        .footer ul { list-style: none; padding: 0; }
+        .footer ul li { margin-bottom: 12px; }
+        .footer ul li a { color: #d7ccc8; text-decoration: none; transition: 0.3s; }
+        .footer ul li a:hover { color: var(--altin); padding-left: 5px; }
+        .social-icons a { width: 40px; height: 40px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: white; margin-right: 10px; text-decoration: none; transition: 0.3s; }
+        .social-icons a:hover { background: var(--altin); }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">{{ bilgi.isim }}</a>
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-leaf" style="color: var(--yesil);"></i> {{ bilgi.isim }}
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="/">Ana Sayfa</a></li>
-
-                    <li class="nav-item"><a class="nav-link" href="/#urunler">Ürünler</a></li>
-
+                    <li class="nav-item"><a class="nav-link" href="/#urunler">Koleksiyon</a></li>
                     <li class="nav-item"><a class="nav-link" href="/blog">Sepetçinin Defteri</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/hakkimizda">Hikayemiz</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ bilgi.facebook }}" target="_blank">Facebook</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="{{ bilgi.facebook }}" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill px-4">İletişim</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -93,26 +108,62 @@
                     <p>Teknolojinin her şeyi hızlandırdığı bu çağda, biz yavaşlamayı ve kalıcı olanı üretmeyi seçiyoruz. Dükkanımızdaki her sepet, bir evin ihtiyacını karşılarken aynı zamanda o eve doğallık ve huzur katsın istiyoruz.</p>
                 </div>
 
-                <div class="mt-5 p-4 bg-white rounded shadow-sm border start-border border-3 border-success">
-                    <h4 style="color: var(--ana-renk);">Bize Ulaşın</h4>
-                    <p class="mb-1"><strong>Adres:</strong> {{ bilgi.adres }}</p>
-                    <p class="mb-3"><strong>Telefon:</strong> {{ bilgi.telefon }}</p>
-                    <a href="{{ bilgi.facebook }}" class="btn btn-outline-success">Facebook Sayfamız</a>
+                <div class="mt-5 p-4 contact-box shadow-sm">
+                    <h4 class="mb-3" style="font-family: 'Playfair Display'; color: var(--ana-renk);">Bize Ulaşın</h4>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i> <strong>Adres:</strong> {{ bilgi.adres }}</p>
+                    <p class="mb-3"><i class="fas fa-phone text-warning me-2"></i> <strong>Telefon:</strong> {{ bilgi.telefon }}</p>
+                    <a href="{{ bilgi.facebook }}" class="btn btn-outline-dark rounded-pill">Facebook Sayfamız</a>
                 </div>
             </div>
 
             <div class="col-md-5 mt-4 mt-md-0 text-center">
-                <img src="{{ url_for('static', filename='img/dukkan_usta.jpg') }}" class="img-fluid img-cerceve rounded" alt="Kadızade Dükkan ve Usta">
+                <img src="{{ url_for('static', filename='img/dukkan_usta.jpg') }}" class="img-fluid img-cerceve" alt="Kadızade Dükkan ve Usta">
             </div>
 
         </div>
     </div>
 
-    <div class="footer text-center">
+    <a href="https://wa.me/905358530399" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 {{ bilgi.isim }} - Gelenekten Geleceğe.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>{{ bilgi.isim }}</h5>
+                    <p class="small opacity-75">Ankara Samanpazarı'nda yılların tecrübesiyle, el emeği hasır ve söğüt sepetleri sizlerle buluşturuyoruz.</p>
+                    <div class="social-icons mt-3">
+                        <a href="{{ bilgi.facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="{{ bilgi.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Hızlı Linkler</h5>
+                    <ul>
+                        <li><a href="/">Ana Sayfa</a></li>
+                        <li><a href="/hakkimizda">Hikayemiz</a></li>
+                        <li><a href="/blog">Sepetçinin Defteri</a></li>
+                        <li><a href="/#urunler">Ürünler</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Kategoriler</h5>
+                    <ul>
+                        <li><a href="#">Ekmek Sepetleri</a></li>
+                        <li><a href="#">Çamaşır Sepetleri</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>İletişim</h5>
+                    <ul class="small">
+                        <li><i class="fas fa-map-marker-alt me-2 text-warning"></i> {{ bilgi.adres }}</li>
+                        <li><i class="fas fa-phone me-2 text-warning"></i> {{ bilgi.telefon }}</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4">
+            <div class="text-center small opacity-50">&copy; 2023 {{ bilgi.isim }}.</div>
         </div>
-    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -4,46 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sepetçinin Defteri - {{ bilgi.isim }}</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
-        :root { --ana-renk: #5D4037; --yesil: #558B2F; --arkaplan: #FDFBF7; }
-        body { background-color: var(--arkaplan); font-family: 'Lora', serif; color: #4e342e; padding-top: 80px; }
-        .navbar { background-color: var(--ana-renk) !important; }
-        .nav-link { color: #d7ccc8 !important; }
-        .nav-link:hover, .nav-link.active { color: white !important; }
-        .navbar-brand { color: #fff !important; }
+        :root {
+            --ana-renk: #4E342E; --vurgu-renk: #8D6E63; --arkaplan: #FAF9F6;
+            --yesil: #558B2F; --altin: #C5A059;
+        }
+
+        body { background-color: var(--arkaplan); font-family: 'Inter', sans-serif; color: var(--ana-renk); padding-top: 76px; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        /* NAVBAR */
+        .navbar { background-color: #fff !important; box-shadow: 0 2px 15px rgba(0,0,0,0.05); padding: 15px 0; }
+        .navbar-brand { color: var(--ana-renk) !important; font-weight: 700; font-size: 1.5rem; }
+        .nav-link { color: #666 !important; font-weight: 500; margin-left: 15px; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--yesil) !important; }
 
         .blog-header { text-align: center; margin-bottom: 50px; max-width: 800px; margin-left: auto; margin-right: auto; }
-        .blog-title { color: var(--ana-renk); font-weight: bold; border-bottom: 3px solid var(--yesil); display: inline-block; padding-bottom: 10px; }
-
-        /* Yeni eklenen giriş yazısı stili */
+        .blog-title { font-size: 3rem; position: relative; display: inline-block; }
         .blog-intro { font-size: 1.2rem; line-height: 1.6; color: #5d4037; margin-top: 20px; font-style: italic; }
 
-        .card { border: none; border-radius: 15px; transition: 0.3s; background: white; border: 1px solid #efebe9; overflow: hidden; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(93,64,55,0.1); }
-        .card-img-top { height: 220px; object-fit: cover; }
-        .btn-oku { color: var(--yesil); text-decoration: none; font-weight: bold; }
-        .btn-oku:hover { text-decoration: underline; color: var(--ana-renk); }
-        .footer { background-color: var(--ana-renk); color: #d7ccc8; padding: 40px 0; margin-top: 80px; }
+        /* KART TASARIMI */
+        .card { border: none; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.4s; background: white; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .card-img-top { height: 250px; object-fit: cover; transition: 0.5s; }
+        .card:hover .card-img-top { transform: scale(1.05); }
+        .btn-oku { color: var(--yesil); text-decoration: none; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; }
+        .btn-oku:hover { color: var(--ana-renk); letter-spacing: 1px; transition: 0.3s; }
+
+        /* WHATSAPP & FOOTER (Aynı) */
+        .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.3s; }
+        .whatsapp-float:hover { background-color: #128C7E; color: white; transform: scale(1.1); }
+        .footer { background-color: #2D2420; color: #d7ccc8; padding: 70px 0 30px 0; margin-top: 100px; }
+        .footer ul { list-style: none; padding: 0; } .footer ul li { margin-bottom: 10px; } .footer a { color: #d7ccc8; text-decoration: none; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">{{ bilgi.isim }}</a>
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-leaf" style="color: var(--yesil);"></i> {{ bilgi.isim }}
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="/">Ana Sayfa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#urunler">Ürünler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#urunler">Koleksiyon</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/blog">Sepetçinin Defteri</a></li>
                     <li class="nav-item"><a class="nav-link" href="/hakkimizda">Hikayemiz</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ bilgi.facebook }}" target="_blank">Facebook</a></li>
+                    <li class="nav-item ms-lg-3"><a href="{{ bilgi.facebook }}" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill px-4">İletişim</a></li>
                 </ul>
             </div>
         </div>
@@ -52,23 +68,21 @@
     <div class="container mt-5">
         <div class="blog-header">
             <h1 class="blog-title">Sepetçinin Defteri</h1>
-            <p class="lead mt-3 text-muted">Samanpazarı'ndan notlar, ipuçları ve hikayeler.</p>
-
-            <p class="blog-intro">
-                "Sepetçilik, insanlık tarihinin en eski zanaatlarından biridir. Plastik poşetlerin, fabrikasyon kutuların olmadığı zamanlarda atalarımız doğanın sunduğu dalları, kamışları ve sazları kullanarak hayatlarını kolaylaştırdı. Biz de Ankara Samanpazarı'nda bu geleneği yaşatmaya devam ediyoruz."
-            </p>
+            <p class="blog-intro">"Sepetçilik, insanlık tarihinin en eski zanaatlarından biridir... Biz de Ankara Samanpazarı'nda bu geleneği yaşatmaya devam ediyoruz."</p>
         </div>
 
         <div class="row">
             {% for yazi in yazilar %}
             <div class="col-md-6 mb-4">
                 <div class="card h-100">
-                    <img src="{{ url_for('static', filename='img/' + yazi.resim) }}" class="card-img-top" alt="{{ yazi.baslik }}">
-                    <div class="card-body">
-                        <small class="text-muted">{{ yazi.tarih }}</small>
-                        <h3 class="card-title mt-2">{{ yazi.baslik }}</h3>
-                        <p class="card-text">{{ yazi.ozet }}</p>
-                        <a href="/blog/{{ yazi.id }}" class="btn-oku">Devamını Oku →</a>
+                    <div style="overflow: hidden;">
+                        <img src="{{ url_for('static', filename='img/' + yazi.resim) }}" class="card-img-top" alt="{{ yazi.baslik }}">
+                    </div>
+                    <div class="card-body p-4">
+                        <small class="text-muted text-uppercase" style="font-size: 0.8rem; letter-spacing: 1px;">{{ yazi.tarih }}</small>
+                        <h3 class="card-title mt-2 h4">{{ yazi.baslik }}</h3>
+                        <p class="card-text text-muted">{{ yazi.ozet }}</p>
+                        <a href="/blog/{{ yazi.id }}" class="btn-oku">Devamını Oku <i class="fas fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -76,9 +90,14 @@
         </div>
     </div>
 
-    <div class="footer text-center">
-        <div class="container"><p>&copy; 2023 {{ bilgi.isim }}.</p></div>
-    </div>
+    <a href="https://wa.me/905358530399" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2023 {{ bilgi.isim }}. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
