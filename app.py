@@ -14,20 +14,21 @@ dukkan_bilgisi = {
     """,
     'adres': 'Kale Mah. Can Sok. 7/A, Samanpazarı, Altındağ/Ankara',
     'telefon': '+90 312 324 26 68',
-    'facebook': 'https://www.facebook.com/kadizade.ticaret/?locale=tr_TR'
+    'facebook': 'https://www.facebook.com/kadizade.ticaret/?locale=tr_TR',
+    'instagram': 'https://www.instagram.com/sepetimde_'
 }
 
-# --- ÜRÜN LİSTESİ ---
+# --- ÜRÜN LİSTESİ (5 ÜRÜN - TEŞHİR KOVASI DAHİL) ---
 urunler = [
     {"ad": "Ekmek Sepetleri", "resim": "sepet1.jpg"},
     {"ad": "Çamaşır Sepetleri", "resim": "sepet2.jpg"},
     {"ad": "Piknik ve Gezi", "resim": "sepet3.jpg"},
-    {"ad": "Dekoratif Modeller", "resim": "sepet4.jpg"}
+    {"ad": "Dekoratif Modeller", "resim": "sepet4.jpg"},
+    {"ad": "Teşhir Kovaları", "resim": "sepet5.jpg"}  # Kaybolan ürün geri geldi
 ]
 
-# --- BLOG YAZILARI ---
+# --- BLOG YAZILARI (2 YAZI) ---
 blog_yazilari = [
-    # MEVCUT 1. YAZI
     {
         "id": 1,
         "baslik": "Hasırın Hikayesi: Topraktan Evinize",
@@ -50,12 +51,11 @@ blog_yazilari = [
             <p>Biz Kadızade Ticaret'te, babadan oğula geçen bu mirası korumaya çalışıyoruz. Sattığımız her sepetin arkasında bir emek, bir hikaye ve doğanın sıcaklığı var. Yolunuz Ankara Kalesi tarafına, Samanpazarı'na düşerse, dükkanımıza uğrayıp hasırın o mis kokusunu içinize çekmenizi, bir çayımızı içmenizi bekleriz.</p>
         """
     },
-    # YENİ EKLENEN 2. YAZI (BUGÜNÜN TARİHİYLE)
     {
         "id": 2,
         "baslik": "Evin Unutulan Dili: Neden Doğal Dokulara Özlem Duyuyoruz?",
         "tarih": "7 Ocak 2026",
-        "resim": "blog2.jpg",  # DİKKAT: static/img klasörüne blog2.jpg adında bir resim atmalısın!
+        "resim": "blog2.jpg",
         "ozet": "Modern evlerin soğuk mükemmelliğinde aradığımız sıcaklık, belki de bir söğüt dalının kusurlu kıvrımında saklıdır. Nostaljiye kısa bir yolculuk...",
         "icerik": """
             <p>Eskiden evlerin bir kokusu, bir dokusu vardı. Hatırlar mısınız büyüklerimizin evlerini? Ahşap kokan merdivenler, yün kokan yorganlar ve mutfak köşesinde sessizce duran, içine soğan, patates ya da yeni pişmiş ekmek konulan o heybetli hasır sepetler...</p>
