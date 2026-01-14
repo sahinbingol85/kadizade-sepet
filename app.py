@@ -18,16 +18,16 @@ dukkan_bilgisi = {
     'instagram': 'https://www.instagram.com/sepetimde_'
 }
 
-# --- ÜRÜN LİSTESİ (5 ÜRÜN - TEŞHİR KOVASI DAHİL) ---
+# --- ÜRÜN LİSTESİ (5 ÜRÜN) ---
 urunler = [
     {"ad": "Ekmek Sepetleri", "resim": "sepet1.jpg"},
     {"ad": "Çamaşır Sepetleri", "resim": "sepet2.jpg"},
     {"ad": "Piknik ve Gezi", "resim": "sepet3.jpg"},
     {"ad": "Dekoratif Modeller", "resim": "sepet4.jpg"},
-    {"ad": "Teşhir Kovaları", "resim": "sepet5.jpg"}  # Kaybolan ürün geri geldi
+    {"ad": "Teşhir Kovaları", "resim": "sepet5.jpg"}
 ]
 
-# --- BLOG YAZILARI (2 YAZI) ---
+# --- BLOG YAZILARI (3 YAZI - YENİSİ EKLENDİ) ---
 blog_yazilari = [
     {
         "id": 1,
@@ -69,6 +69,44 @@ blog_yazilari = [
             <p>Ankara Kalesi'nin gölgesindeki dükkanımıza (Kadızade Ticaret) gelen misafirlerimizde hep aynı bakışı görüyoruz. Bir çamaşır sepetine ya da küçük bir ekmekliğe dokunduklarında yüzlerine yayılan o tebessüm, aslında çocukluklarına yapılan kısa ve sıcak bir yolculuk.</p>
 
             <p>Biz sadece bir eşya satmıyoruz; unuttuğunuz o sıcaklık hissini, evin kaybolan ruhunu geri veriyoruz. Evinizin bir köşesinde doğaya yer açın. İnanın, o köşenin enerjisi değişecek.</p>
+        """
+    },
+    # --- YENİ EKLENEN 3. YAZI (BUGÜN) ---
+    {
+        "id": 3,
+        "baslik": "Sofranın Kalbi: Sıcak Ekmek ve Hasırın Dostluğu",
+        "tarih": "14 Ocak 2026",
+        "resim": "blog3.jpg",
+        "ozet": "Fırından yeni çıkmış o mis kokulu ekmeğin en iyi dostu neden plastiği değil de hasırı sever? Sofranızın bereketini koruyan doğal sırlar ve bakım ipuçları.",
+        "icerik": """
+            <p>Pazar sabahlarını düşünün... Bütün aile bir arada, çay demlenmiş, peynir zeytin hazır. Ancak o sofranın asıl yıldızı, fırından yeni çıkmış, dumanı üzerinde tüten, kokusu tüm evi saran taze ekmektir. O ekmeği böldüğünüzde çıkan "çıt" sesi, aslında mutluluğun sesidir.</p>
+
+            <p>Peki, bu kadar özenle hazırlanan, binbir emekle sofraya gelen ekmeğe nasıl davranıyoruz? Onu havasız poşetlere mi hapsediyoruz, yoksa soğuk plastik kaplarda terlemesine mi izin veriyoruz? Gelin, ekmeğinize hak ettiği değeri vermenin yollarını konuşalım.</p>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Ekmeğin En Büyük Düşmanı: Nem</h3>
+            <p>Ekmek, fırından çıktıktan sonra da "yaşayan" bir gıdadır. İçindeki nemi yavaş yavaş dışarı verir. Eğer ekmeği hava almayan metal, cam veya plastik bir kutuya koyarsanız, bu nem içeride hapsolur. Sonuç bellidir:</p>
+            <ul>
+                <li><strong>Yumuşama:</strong> O sevdiğiniz çıtır kabuk, dakikalar içinde lastik gibi olur.</li>
+                <li><strong>Küflenme:</strong> Hapsolan nem, bakteriler için bir yuva oluşturur ve ekmeğin ömrünü kısaltır.</li>
+                <li><strong>Tat Kaybı:</strong> Ekmeğin o kendine has aroması, plastik kokusuyla karışarak kaybolur.</li>
+            </ul>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Doğal Söğüt Sepetin Sırrı: "Nefes Alma"</h3>
+            <p>İşte atalarımızın neden yüzyıllardır hasır ve söğüt sepet kullandığının cevabı burada gizli. Kadızade Ticaret olarak Samanpazarı'nda ördüğümüz sepetler, tamamen doğal dallardan oluşur.</p>
+            <p>Söğüt dallarının arasındaki o milimetrik boşluklar, sepetin sürekli hava almasını sağlar. Bu doğal sirkülasyon sayesinde ekmeğin fazla nemi uçar gider, ama ekmek kurumaz. Sepet, ekmeği kucaklar; onu hem sıcak tutar hem de terlemesini engeller. Bu, doğanın bize sunduğu en basit ama en mükemmel mühendisliktir.</p>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Sofrada Görsel Bir Şölen</h3>
+            <p>İşin bir de estetik boyutu var. Beyaz bir porselen tabağın yanına, fabrikasyon bir plastik kap koymakla; el emeği, toprak tonlarında bir hasır sepet koymak arasındaki farkı hayal edin. Hasır sepet, masaya bir "ruh" katar. Soğuk kış günlerinde sofrayı ısıtır, misafirlerinize "burada her şey doğal ve samimi" mesajını verir.</p>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Küçük Bir İpucu: Ekmek Sepeti Temizliği</h3>
+            <p>Müşterilerimizden sıkça duyduğumuz bir soru var: <em>"Peki bu sepetleri nasıl temizleyeceğiz?"</em> Cevabı çok basit:</p>
+            <ul>
+                <li>Kırıntıları dökmek için sepeti ters çevirip hafifçe sirkelemeniz yeterlidir.</li>
+                <li>Eğer kirlenirse, nemli bir bezle silip (asla suya sokmadan) havadar bir yerde kurumaya bırakabilirsiniz.</li>
+                <li>İçine keten veya pamuklu bir bez sererek (peçete) kullanmak, hem temizliği kolaylaştırır hem de sunumu güzelleştirir.</li>
+            </ul>
+
+            <p>Evinizin bereketini, doğanın kucağında saklayın. Bir dahaki sefere fırından eve dönerken, ekmeğinizi poşetten çıkarmayı unutmayın. Farkı, o ilk lokmada hissedeceksiniz.</p>
         """
     }
 ]
