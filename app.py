@@ -109,6 +109,35 @@ blog_yazilari = [
             <p>Evinizin bereketini, doğanın kucağında saklayın. Bir dahaki sefere fırından eve dönerken, ekmeğinizi poşetten çıkarmayı unutmayın. Farkı, o ilk lokmada hissedeceksiniz.</p>
         """
     }
+    # --- 4. YAZI ---
+    {
+        "id": 4,
+        "baslik": "Derle, Topla, Nefes Al: Ev Düzeninde Doğallığın Büyüsü",
+        "tarih": "21 Ocak 2026",
+        "resim": "blog4.jpg",
+        "ozet": "Evinizdeki dağınıklık zihninizi de yoruyor olabilir mi? Plastik kutular yerine doğal sepetlerle evinizi (ve ruhunuzu) ferahlatmanın yolları.",
+        "icerik": """
+            <p>Kış aylarının ortasındayız. Dışarısı soğuk, evlerimiz ise sığınağımız. Ancak bazen bu sığınak, etrafa saçılmış eşyalar, birikmiş çamaşırlar ve plastik kutuların soğuk görüntüsüyle üzerimize gelebilir. Japonların meşhur "sadeleşme" felsefesini duymuşsunuzdur; derler ki: <em>"Eviniz düzenliyse, zihniniz de düzenlidir."</em></p>
+
+            <p>Peki, bu düzeni sağlarken evin sıcaklığını nasıl koruyacağız? Her şeyi gri plastik kutulara doldurmak evi toplar belki ama o eve "yuva" sıcaklığını vermez. İşte tam bu noktada, yüzyıllık dostumuz hasır sepetler devreye giriyor.</p>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Görünmeyen Tehlike: Kirli Sepetleri</h3>
+            <p>Banyo veya yatak odasında kullandığınız kirli çamaşır sepetine hiç dikkat ettiniz mi? Genelde plastik tercih edilir "kolay temizlenir" diye. Oysa plastik, hava geçirmez.</p>
+            <ul>
+                <li><strong>Koku ve Küf:</strong> Nemli havluları veya spor kıyafetlerini plastik bir sepete attığınızda, hava almadığı için bakteriler hızla çoğalır. O ağır koku, aslında bakterilerin sesidir.</li>
+                <li><strong>Doğal Çözüm:</strong> Söğüt ve kargıdan ördüğümüz çamaşır sepetleri ise yaşayan bir yapıya sahiptir. Gözenekli dokusu sayesinde hava sürekli içeride dolaşır. Çamaşırlarınız beklerken kurumaya devam eder, kötü kokular hapsolmaz, uçar gider.</li>
+            </ul>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Dekorasyonun Joker Elemanı</h3>
+            <p>Hasır sepetler sadece kirliler için değildir. Salonun köşesinde duran o şık, büyük sepeti düşünün...</p>
+            <p>Kışın koltuk şallarını ve battaniyeleri içine rulo yapıp koyduğunuzda, hem dağınıklık biter hem de sanki bir dekorasyon dergisinden fırlamış gibi bir görüntü oluşur. Çocuk odasında oyuncakları, çalışma odasında dergileri toparlar. Plastik bir kutuyu dolabın içine saklamak istersiniz, ama el örmesi bir sepeti gururla sergilersiniz.</p>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Samanpazarı'ndan Bir Tavsiye</h3>
+            <p>Kadızade Ticaret olarak, sepetlerimizi örerken sağlamlığa çok önem veriyoruz. Büyük boy çamaşır ve düzenleme sepetlerimiz, içine ağır yükler girse bile formunu bozmayacak şekilde, sıkı teknikle örülür. </p>
+
+            <p>Bu hafta sonu evinize şöyle bir bakın. Gözünüzü yoran o plastik kutuları, havasız hurçları bir kenara bırakın. Doğanın dokusunu evinize davet edin. Göreceksiniz; sadece eviniz değil, içiniz de ferahlayacak.</p>
+        """
+    }
 ]
 
 
