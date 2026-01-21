@@ -108,7 +108,7 @@ blog_yazilari = [
 
             <p>Evinizin bereketini, doğanın kucağında saklayın. Bir dahaki sefere fırından eve dönerken, ekmeğinizi poşetten çıkarmayı unutmayın. Farkı, o ilk lokmada hissedeceksiniz.</p>
         """
-    }
+    },
     # --- 4. YAZI ---
     {
         "id": 4,
