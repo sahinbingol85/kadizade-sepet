@@ -137,7 +137,7 @@ blog_yazilari = [
 
             <p>Bu hafta sonu evinize şöyle bir bakın. Gözünüzü yoran o plastik kutuları, havasız hurçları bir kenara bırakın. Doğanın dokusunu evinize davet edin. Göreceksiniz; sadece eviniz değil, içiniz de ferahlayacak.</p>
         """
-    }
+    },
     # --- YENİ EKLENEN 5. YAZI (ANKARA KALESİ) ---
     {
         "id": 5,
