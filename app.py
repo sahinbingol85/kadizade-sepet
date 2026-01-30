@@ -138,6 +138,30 @@ blog_yazilari = [
             <p>Bu hafta sonu evinize şöyle bir bakın. Gözünüzü yoran o plastik kutuları, havasız hurçları bir kenara bırakın. Doğanın dokusunu evinize davet edin. Göreceksiniz; sadece eviniz değil, içiniz de ferahlayacak.</p>
         """
     }
+    # --- YENİ EKLENEN 5. YAZI (ANKARA KALESİ) ---
+    {
+        "id": 5,
+        "baslik": "Ankara'nın Asırlık Bekçisi: Kale'nin Taşlarına Sinmiş Hikayeler",
+        "tarih": "28 Ocak 2026",
+        "resim": "blog5.jpg",
+        "ozet": "Galatlar, Romalılar, Selçuklular... Kaç medeniyet geçti bu surların dibinden? Ankara Kalesi sadece bir taş yığını değil, şehrin atan kalbidir.",
+        "icerik": """
+            <p>Başınızı kaldırıp Ankara’ya, o gri şehrin tepesine baktığınızda onu görürsünüz. Yüzyıllardır oradadır. Mevsimler değişir, insanlar değişir, şehir büyür ve gökdelenlere boğulur ama Ankara Kalesi, vakur duruşunu hiç bozmaz. Kadızade Ticaret olarak sırtımızı yasladığımız bu kadim duvarların hikayesine hiç kulak verdiniz mi?</p>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Toplama Taşların Büyüsü</h3>
+            <p>Ankara Kalesi'ni diğer kalelerden ayıran eşsiz bir özellik vardır: "Devşirme" duvarlar. Dikkatli bakarsanız, kale duvarlarının içinde Roma döneminden kalma mermer sütun başlıklarını, üzerinde Latince yazılar olan kitabeleri veya eski bir tapınağın parçalarını görebilirsiniz.</p>
+            <p>Selçuklular ve Osmanlılar, kaleyi onarırken geçmişe saygısızlık etmemiş, bilakis eski medeniyetlerin izlerini kendi duvarlarında yaşatmışlardır. Bu yüzden Ankara Kalesi, tek bir dönemin değil, bu topraklardan geçen herkesin ortak imzasıdır.</p>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Kalenin İçi: Yaşayan Bir Köy</h3>
+            <p>Çoğu kale sadece askeri bir yapıdır, ama Ankara Kalesi'nin içi yaşar. "Kale İçi"ne girdiğinizde sanki zaman durur. Daracık sokaklar, cumbalı ahşap evler, kapı önünde sohbet eden teyzeler... Burası şehrin gürültüsünden kaçıp nefes aldığımız bir zaman tünelidir.</p>
+            <p>Samanpazarı ve Çıkrıkçılar Yokuşu da bu yaşamın ticaret damarıdır. Ahilik geleneğinin doğduğu bu sokaklarda, dürüstlük ve el emeği hala en geçerli akçedir. Biz de sepetlerimizi örerken bu "Ahi" ruhundan ilham alıyoruz.</p>
+
+            <h3 style="color:#5D4037; margin-top:30px;">Bir Hafta Sonu Rotası</h3>
+            <p>Bu hafta sonu kendinize bir güzellik yapın. Akkale'nin burçlarına çıkıp Ankara'yı kuş bakışı izleyin. Rüzgarın sesini dinleyin. Sonra o tarihi sokaklardan aşağı, Samanpazarı'na doğru süzülün.</p>
+
+            <p>Yolunuzun üzerindeki dükkanımıza uğrayıp, tarihin kokusunu içinize çektikten sonra, el emeği sepetlerimize dokunmayı unutmayın. Çünkü biz inanıyoruz ki; tıpkı Kale gibi, bazı şeyler eskidikçe kıymetlenir.</p>
+        """
+    }
 ]
 
 
